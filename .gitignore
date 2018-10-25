@@ -15,3 +15,7 @@
 .idea
 
 /ignore
+
+# bolt db files
+*.db.lock
+*.db
