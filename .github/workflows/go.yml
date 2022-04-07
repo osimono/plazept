@@ -3,19 +3,14 @@ name: Go
 on:
   workflow_dispatch:
     inputs:
-      name:
+      k8sContext:
         type: choice
-        description: Who to greet
-        options: 
-        - monalisa
-        - cschleiden
-      message:
+        description: 'Context'
         required: true
-      use-emoji:
-        type: boolean
-        description: Include 🎉🤣 emojis
-      environment:
-        type: environment
+        options:
+        - mdqd-int
+        - mdqd-prod
+        default: 'mdqd-int'
 
 jobs:
 
